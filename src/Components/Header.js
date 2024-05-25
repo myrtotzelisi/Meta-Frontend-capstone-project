@@ -1,9 +1,8 @@
-import logo from './assets/Logo.jpg'
+import logo from '../assets/Logo .svg'
 
 function Header() {
     return (
     <div>
-        <h1>Little Lemon restaurant</h1>
         <img src={logo} alt="Little lemon logo"/>
     </div>
     )

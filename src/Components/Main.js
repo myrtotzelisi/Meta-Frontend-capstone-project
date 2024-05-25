@@ -1,4 +1,4 @@
-import restaurantfood from './assets/Restaurantfood.jpg'
+import restaurantfood from '../assets/Restaurantfood.jpg'
 
 
 function Main() {
@@ -6,7 +6,7 @@ function Main() {
     <div className="hero">
         <section>
             <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
+            <h4>Chicago</h4>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         </section>
         <button>Reserve a table</button>

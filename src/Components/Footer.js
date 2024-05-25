@@ -1,7 +1,7 @@
 import Nav from './Nav';
-import logo from './assets/Logo-sm-yellow.png'
-import FbLogo from './assets/Facebook_Logo.png'
-import InstaLogo from './assets/Instagram_Logo.png'
+import logo from '../assets/Logo-sm-yellow.png'
+import FbLogo from '../assets/Facebook_Logo.png'
+import InstaLogo from '../assets/Instagram_Logo.png'
 
 function Footer () {
     return(
