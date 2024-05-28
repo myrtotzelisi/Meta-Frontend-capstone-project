@@ -95,6 +95,7 @@
   @media only screen and (max-width: 510px) {
 
     .navbar {
+      min-height: 100px;
       height: auto;
      }
     .navbar #open .hiddenLinks {

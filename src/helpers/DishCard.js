@@ -9,9 +9,9 @@ export const DishCard = (props) => {
       <img src={image} alt={name}/>
       <div className='item'>
         <h6>{name}</h6>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
-      <p>{description}</p>
+      <p id='foodDescription'>{description}</p>
       <div className='delivery'>
       <Link to='/'>Order delivery</Link>
       <img src={orderIcon} alt='little green biker' id='orderIcon'/>

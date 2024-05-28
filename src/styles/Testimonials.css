@@ -1,0 +1,109 @@
+.testimonials {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    padding: 30px 15%;
+    margin: 30px 0;
+    /* background-color: #edefee; */
+
+}
+
+.testimonials h5 {
+    padding-bottom: 30px;
+}
+
+.testimonials img {
+    width: 70px;
+}
+
+.testimonials .testimonialsCards {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+}
+
+.testimonials .testimonialsCards .cardItem {
+    background-color: #EE9972;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 200px;
+    margin-right: 10px;
+    /* border: 2px solid blue; */
+}
+.testimonials .testimonialsCards .cardItem:last-of-type {
+    margin-right: 0;
+}
+
+.testimonials .cardItem #stars {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10% 7% 0 7%;
+}
+
+.testimonials .cardItem .personInfo {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 7%;
+}
+
+.testimonials .cardItem .personInfo p {
+    padding-left: 7%;
+}
+
+.testimonials .cardItem #reviewDescription {
+    /* border: 2px solid blue; */
+    padding: 0 7%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    .testimonials .testimonialsCards {
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .testimonials .testimonialsCards .cardItem {
+        background-color: #EE9972;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* border: 2px solid blue; */
+    }
+    .testimonials .cardItem #stars {
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 5% 7% 0 7%;
+        /* border: 2px solid blue; */
+    }
+
+.testimonials .cardItem .personInfo {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 2% 7%;
+}
+.testimonials .cardItem #reviewDescription {
+    /* border: 2px solid blue; */
+    padding: 2% 7% 5% 7%;
+}
+.testimonials .testimonialsCards .cardItem:last-of-type {
+    margin-bottom: 0;
+}
+
+}
