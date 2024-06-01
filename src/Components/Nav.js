@@ -46,7 +46,7 @@ function Navbar() {
         <div className='rightSide'>
             <Link to='/' id='hiddenLink'>Home</Link>
             <Link to='/about' id='hiddenLink'>About</Link>
-            <Link to='/menu' id='hiddenLink'>Menu</Link>
+            <Link to='/' id='hiddenLink'>Menu</Link>
             <Link to='/reservations' id='hiddenLink'>Reservations</Link>
             <Link to='/' id='hiddenLink'>Order Online</Link>
             <Link to='/' id='hiddenLink'>Login</Link>
