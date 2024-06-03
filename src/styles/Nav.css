@@ -37,20 +37,24 @@
     color: black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-    /* border: 2px solid red; */
     padding-left: 5%;
     white-space: nowrap;
     text-align: center;
+    cursor: pointer;
   }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
   
   .navbar .rightSide button {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
-    /* border: 2px solid red; */
     display: none;
   }
-  
+
   .navbar #menuicon {
     width: 50px;
   }
@@ -106,5 +110,11 @@
     }
     .navbar #hiddenLink {
       padding: 5px 0;
+     }
+     .navbar #hiddenLink:first-child {
+      padding-top: 20px;
+     }
+     .navbar #hiddenLink:last-child {
+      padding-bottom: 20px;
      }
   }

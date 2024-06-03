@@ -31,6 +31,13 @@
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     margin-right: 5px;
+    transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.specials .dishItem:hover {
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+ transform: scale(1.01);
+
 }
 
 .specials .dishItem:last-of-type {
@@ -88,6 +95,9 @@
     color: black;
     text-decoration: none;
     font-weight: bold;
+}
+.specials .dishItem .delivery a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 800px){

@@ -1,0 +1,69 @@
+.reservations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15%;
+    /* background-color: #495e57; */
+
+}
+
+.bookingForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reservations h4 {
+    margin: 40px 0 20px 0;
+}
+
+.bookingForm form {
+    display: flex;    
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+form label {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #495E57;
+    /* color: #edefee; */
+    margin: 10px 0;
+
+}
+
+form input, select {
+    background-color: #edefee;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 10px;
+    }
+
+form select:focus, input:focus {
+  outline: none;
+}
+
+form input::placeholder {
+    color: black;
+}
+
+form input:focus:invalid {
+    border: 2px solid red
+}
+
+form .error {
+    font-size: 10pt;
+    color: red;
+    font-style: italic;
+}
+
+.bookingForm form button {
+    width: 240px;
+    max-width: 100%;
+    align-self: center;
+    margin: 40px 0;
+    height: auto;
+}

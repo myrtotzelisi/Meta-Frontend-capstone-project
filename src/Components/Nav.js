@@ -4,25 +4,6 @@ import logo from '../assets/Logo .svg'
 import icon from '../assets/hamburger_button_menu_icon_155296.png'
 import '../styles/Nav.css'
 
-// function Nav() {
-//     return (
-//         <nav>
-//             <div className="navbar">
-
-//             </div>
-//              <img src={logo} alt="Little lemon logo"/>
-//             <Link to="/home">Home</Link>
-//             <Link to="/about">About</Link>
-//             <Link to="/menu">Menu</Link>
-//             <Link to="/reservations">Reservations</Link>
-//             <Link to="/home">Order Online</Link>
-//             <Link to="/home">Login</Link>
-//         </nav>
-//     )
-// }
-
-// export default Nav;
-
 function Navbar() {
 
     const [openLinks, setOpenLinks]=useState(false);
@@ -50,7 +31,7 @@ function Navbar() {
             <Link to='/reservations' id='hiddenLink'>Reservations</Link>
             <Link to='/' id='hiddenLink'>Order Online</Link>
             <Link to='/' id='hiddenLink'>Login</Link>
-            <button onClick={toggleNavbar} id='navbarButton'>
+            <button onClick={toggleNavbar} aria-label="Open navigation" id='navbarButton'>
             <img src={icon} alt="Menu icon" id="menuicon"/>
             </button>
         </div>

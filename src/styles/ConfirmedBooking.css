@@ -1,0 +1,26 @@
+.confirmed {
+    display: flex;
+    flex-direction: column;
+} 
+
+.confirmed .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #495e57;
+    color: white;
+    padding: 0 15%;
+}
+
+.confirmed .text h4 {
+    margin-top: 60px;
+}
+.confirmed .text h6 {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.confirmed .text span {
+    color: #F4CE14;
+    font-size: 26pt;
+}
