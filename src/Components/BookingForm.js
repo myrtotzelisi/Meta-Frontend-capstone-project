@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
 function BookingForm({availableTimes, dispatch, submitForm }) {
-    const [name, setName] = useState('')
+  //should have created an state object
+  const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [date, setDate] = useState('')
-    const [time, setTime] = useState('17:00')
+    const [time, setTime] = useState('')
     const [guests, setGuests] = useState('2')
     const [occasion, setOccasion] =  useState('Occasion')
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const formData = {date, time, guests, occasion}
+        const formData = {name, email, date, time, guests, occasion}
         console.log(formData)
         submitForm (formData)
     }
@@ -19,7 +20,7 @@ function BookingForm({availableTimes, dispatch, submitForm }) {
 const handleChange = (e) => {
     const newDate = e.target.value
     setDate(newDate);
-    dispatch(newDate)
+    dispatch({type: 'UPDATE_TIME', payload: newDate})
 }
 
 const [errors, setErrors] = useState({});

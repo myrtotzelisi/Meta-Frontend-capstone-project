@@ -44,11 +44,16 @@ const fetchAPI = function(date) {
     return result;
 };
 
-  const initialState = {availableTimes: fetchAPI (new Date())}
-  const [state, dispatch] = useReducer(updateTimes, initialState);
+  const initializeTimes = () => {return {availableTimes: fetchAPI (new Date())}}
+  const [state, dispatch] = useReducer(updateTimes,[], initializeTimes);
 
-  function updateTimes (state, date) {
-    return {availableTimes: fetchAPI (new Date(date))}
+  function updateTimes (state, action) {
+    switch(action.type) {
+      case "UPDATE_TIME":
+       return {availableTimes: fetchAPI (new Date(action.payload))}
+      default:
+        return state;
+    }
   }
 
   const submitAPI = formData => true;
