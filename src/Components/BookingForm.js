@@ -10,11 +10,13 @@ function BookingForm({availableTimes, dispatch, submitForm }) {
     const [occasion, setOccasion] =  useState('Occasion')
 
 
-    const handleSubmit = (e) => {
+   const handleSubmit = (e) => {
         e.preventDefault();
-        const formData = {name, email, date, time, guests, occasion}
+        if (validate()){
+          const formData = {name, email, date, time, guests, occasion}
         console.log(formData)
         submitForm (formData)
+        }
     }
       
 const handleChange = (e) => {
